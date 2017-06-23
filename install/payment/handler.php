@@ -35,7 +35,9 @@ class AcquiropayHandler extends PaySystem\ServiceHandler
         $extraParams = array(
             "URL" => $this->getUrl($payment, "pay"),
             "TOKEN" => $this->generateToken($payment),
-//            "BX_PAYSYSTEM_CODE" => $payment->getPaymentSystemId(),
+            "PAYMENT_SHOULD_PAY" => $this->convertToFixedString(
+                $this->getBusinessValue($payment, "PAYMENT_SHOULD_PAY")
+            ),
         );
 
         if ($this->shouldIncludeReceipt($payment)) {
@@ -118,7 +120,7 @@ class AcquiropayHandler extends PaySystem\ServiceHandler
     {
         return array(
             "pay" => array(
-                self::TEST_URL => "http://secure.acqp.co/",
+                self::TEST_URL => "https://secure.acqp.co/",
                 self::ACTIVE_URL => "https://secure.acquiropay.com/",
             ),
         );
@@ -134,7 +136,7 @@ class AcquiropayHandler extends PaySystem\ServiceHandler
         return md5(
             $this->getBusinessValue($payment, "ACQUIROPAY_MERCHANT_ID") .
             $this->getBusinessValue($payment, "ACQUIROPAY_PRODUCT_ID") .
-            $this->getBusinessValue($payment, "PAYMENT_SHOULD_PAY") .
+            $this->convertToFixedString($this->getBusinessValue($payment, "PAYMENT_SHOULD_PAY")) .
             $this->getBusinessValue($payment, "PAYMENT_ID") .
             $this->getBusinessValue($payment, "ACQUIROPAY_SECRET_WORD")
         );
@@ -175,12 +177,11 @@ class AcquiropayHandler extends PaySystem\ServiceHandler
         /** @var \Bitrix\Sale\BasketItem $item */
         foreach ($paymentCollection->getOrder()->getBasket()->getBasketItems() as $item) {
             $receipt["items"][] = array(
-                "sum" => $item->getFinalPrice(),
+                "sum" => $this->convertToFixedString($item->getFinalPrice()),
                 "tax" => $this->resolveTax($item),
-                "tax_sum" => $item->getVat(),
                 "name" => $item->getField("NAME"),
-                "price" => $item->getBasePrice(),
-                "quantity" => $item->getQuantity(),
+                "price" => $this->convertToFixedString($item->getBasePrice()),
+                "quantity" => $this->convertToFixedString($item->getQuantity()),
             );
         }
 
@@ -221,5 +222,10 @@ class AcquiropayHandler extends PaySystem\ServiceHandler
         $paymentAmount = PriceMaths::roundByFormatCurrency($request->get("amount"), $payment->getField("CURRENCY"));
 
         return $paymentShouldPay === $paymentAmount;
+    }
+
+    protected function convertToFixedString($value)
+    {
+        return number_format($value, 2, '.', '');
     }
 }

@@ -11,9 +11,8 @@ Loc::loadMessages(__FILE__);
 /** @var array $params */
 
 ?>
-<form id="pay" name="pay" method="GET" action="<?= $params["URL"] ?>">
+<form id="pay" name="pay" method="POST" action="<?= $params["URL"] ?>">
     <input type="hidden" name="product_id" value="<?= $params["ACQUIROPAY_PRODUCT_ID"] ?>">
-    <input type="hidden" name="product_name" value="<?= $params["ACQUIROPAY_PRODUCT_NAME"] ?>">
     <input type="hidden" name="token" value="<?= $params["TOKEN"] ?>">
     <input type="hidden" name="amount" value="<?= $params["PAYMENT_SHOULD_PAY"] ?>">
     <input type="hidden" name="cf" value="<?= $params["PAYMENT_ID"] ?>">

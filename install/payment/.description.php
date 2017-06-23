@@ -37,10 +37,6 @@ $data = array(
             "NAME" => Loc::getMessage("SALE_HPS_ACQUIROPAY_PRODUCT_ID"),
             "GROUP" => Loc::getMessage("SALE_HPS_CONNECT_SETTINGS_ACQUIROPAY"),
         ),
-        "ACQUIROPAY_PRODUCT_NAME" => array(
-            "NAME" => Loc::getMessage("SALE_HPS_ACQUIROPAY_PRODUCT_NAME"),
-            "GROUP" => Loc::getMessage("SALE_HPS_CONNECT_SETTINGS_ACQUIROPAY"),
-        ),
         "ACQUIROPAY_SECRET_WORD" => array(
             "NAME" => Loc::getMessage("SALE_HPS_ACQUIROPAY_SECRET_WORD"),
             "GROUP" => Loc::getMessage("SALE_HPS_CONNECT_SETTINGS_ACQUIROPAY"),
