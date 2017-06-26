@@ -1,5 +1,5 @@
 <?php
 
-$MESS["ACQUIROPAY_MODULE_NAME"] = "ÐŸÐ»Ð°Ñ‚Ñ‘Ð¶Ð½Ð°Ñ ÑÐ¸ÑÑ‚ÐµÐ¼Ð° AcquiroPay";
-$MESS["ACQUIROPAY_MODULE_DESCRIPTION"] = "ÐžÐ¿Ð»Ð°Ñ‚Ð° Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð² Ð¸ ÑƒÑÐ»ÑƒÐ³ Ñ Ð¿Ð¾Ð¼Ð¾Ñ‰ÑŒÑŽ Ð±Ð°Ð½ÐºÐ¾Ð²ÑÐºÐ¸Ñ… ÐºÐ°Ñ€Ñ‚ Ð¸ Ð½ÐµÐ±Ð°Ð½ÐºÐ¾Ð²ÑÐºÐ¸Ñ… Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ð½Ñ‹Ñ… ÑÐ¸ÑÑ‚ÐµÐ¼";
+$MESS["ACQUIROPAY_MODULE_NAME"] = "Ïëàò¸æíàÿ ñèñòåìà AcquiroPay";
+$MESS["ACQUIROPAY_MODULE_DESCRIPTION"] = "Îïëàòà òîâàðîâ è óñëóã ñ ïîìîùüþ áàíêîâñêèõ êàðò è íåáàíêîâñêèõ ïëàòåæíûõ ñèñòåì";
 $MESS["ACQUIROPAY_PARTNER_NAME"] = "AcquiroPay";

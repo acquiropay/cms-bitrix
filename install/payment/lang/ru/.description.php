@@ -1,26 +1,26 @@
 <?php
 
 $MESS["SALE_HPS_ACQUIROPAY_NAME"] = "Acquiropay";
-$MESS["SALE_HPS_ACQUIROPAY_DESCRIPTION"] = "ÐžÐ¿Ð»Ð°Ñ‚Ð° Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð² Ð¸ ÑƒÑÐ»ÑƒÐ³ Ñ Ð¿Ð¾Ð¼Ð¾Ñ‰ÑŒÑŽ Ð±Ð°Ð½ÐºÐ¾Ð²ÑÐºÐ¸Ñ… ÐºÐ°Ñ€Ñ‚ Ð¸ Ð½ÐµÐ±Ð°Ð½ÐºÐ¾Ð²ÑÐºÐ¸Ñ… Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ð½Ñ‹Ñ… ÑÐ¸ÑÑ‚ÐµÐ¼.";
+$MESS["SALE_HPS_ACQUIROPAY_DESCRIPTION"] = "Îïëàòà òîâàðîâ è óñëóã ñ ïîìîùüþ áàíêîâñêèõ êàðò è íåáàíêîâñêèõ ïëàòåæíûõ ñèñòåì.";
 
-$MESS["SALE_HPS_CONNECT_SETTINGS_ACQUIROPAY"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Acquiropay";
+$MESS["SALE_HPS_CONNECT_SETTINGS_ACQUIROPAY"] = "Íàñòðîéêè ïîäêëþ÷åíèÿ Acquiropay";
 
-$MESS["SALE_HPS_ACQUIROPAY_CHANGE_STATUS_PAY"] = "ÐÐ²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸ Ð¾Ð¿Ð»Ð°Ñ‡Ð¸Ð²Ð°Ñ‚ÑŒ Ð¾Ð¿Ð»Ð°Ñ‚Ñƒ Ð¿Ñ€Ð¸ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ð¸ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾Ð³Ð¾ ÑÑ‚Ð°Ñ‚ÑƒÑÐ°";
-$MESS["SALE_HPS_ACQUIROPAY_TEST"] = "Ð¢ÐµÑÑ‚Ð¾Ð²Ñ‹Ð¹ Ñ€ÐµÐ¶Ð¸Ð¼";
+$MESS["SALE_HPS_ACQUIROPAY_CHANGE_STATUS_PAY"] = "Àâòîìàòè÷åñêè îïëà÷èâàòü îïëàòó ïðè ïîëó÷åíèè óñïåøíîãî ñòàòóñà";
+$MESS["SALE_HPS_ACQUIROPAY_TEST"] = "Òåñòîâûé ðåæèì";
 
-$MESS["SALE_HPS_ACQUIROPAY_MERCHANT_ID"] = "ID Ñ‚Ð¾Ñ€Ð³Ð¾Ð²Ñ†Ð°";
-$MESS["SALE_HPS_ACQUIROPAY_PRODUCT_ID"] = "ID Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð°";
-$MESS["SALE_HPS_ACQUIROPAY_PRODUCT_NAME"] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð°";
-$MESS["SALE_HPS_ACQUIROPAY_SECRET_WORD"] = "Ð¡ÐµÐºÑ€ÐµÑ‚Ð½Ð¾Ðµ ÑÐ»Ð¾Ð²Ð¾";
-$MESS["SALE_HPS_ACQUIROPAY_URL"] = "ÐÐ´Ñ€ÐµÑ Ð´Ð»Ñ Ð¾Ð¿Ð¾Ð²ÐµÑ‰ÐµÐ½Ð¸Ñ";
-$MESS["SALE_HPS_ACQUIROPAY_URL_OK"] = "ÐÐ´Ñ€ÐµÑ Ð¿Ñ€Ð¸ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾Ð¹ Ð¾Ð¿Ð»Ð°Ñ‚Ðµ";
-$MESS["SALE_HPS_ACQUIROPAY_URL_ERROR"] = "ÐÐ´Ñ€ÐµÑ Ð¿Ñ€Ð¸ Ð¾ÑˆÐ¸Ð±ÐºÐµ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
-$MESS["SALE_HPS_ACQUIROPAY_BILL"] = "ÐŸÐµÑ€ÐµÐ´Ð°Ñ‡Ð° Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð´Ð»Ñ Ñ‡ÐµÐºÐ° Ð¿Ð¾ 54-Ð¤Ð—";
+$MESS["SALE_HPS_ACQUIROPAY_MERCHANT_ID"] = "ID òîðãîâöà";
+$MESS["SALE_HPS_ACQUIROPAY_PRODUCT_ID"] = "ID ïðîäóêòà";
+$MESS["SALE_HPS_ACQUIROPAY_PRODUCT_NAME"] = "Íàçâàíèå ïðîäóêòà";
+$MESS["SALE_HPS_ACQUIROPAY_SECRET_WORD"] = "Ñåêðåòíîå ñëîâî";
+$MESS["SALE_HPS_ACQUIROPAY_URL"] = "Àäðåñ äëÿ îïîâåùåíèÿ";
+$MESS["SALE_HPS_ACQUIROPAY_URL_OK"] = "Àäðåñ ïðè óñïåøíîé îïëàòå";
+$MESS["SALE_HPS_ACQUIROPAY_URL_ERROR"] = "Àäðåñ ïðè îøèáêå îïëàòû";
+$MESS["SALE_HPS_ACQUIROPAY_BILL"] = "Ïåðåäà÷à äàííûõ äëÿ ÷åêà ïî 54-ÔÇ";
 
-$MESS["SALE_HPS_ACQUIROPAY_PHONE"] = "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ";
-$MESS["SALE_HPS_ACQUIROPAY_EMAIL"] = "Email Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ";
-$MESS["SALE_HPS_ACQUIROPAY_FIRST_NAME"] = "Ð˜Ð¼Ñ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ";
-$MESS["SALE_HPS_ACQUIROPAY_LAST_NAME"] = "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ";
+$MESS["SALE_HPS_ACQUIROPAY_PHONE"] = "Òåëåôîí ïîêóïàòåëÿ";
+$MESS["SALE_HPS_ACQUIROPAY_EMAIL"] = "Email ïîêóïàòåëÿ";
+$MESS["SALE_HPS_ACQUIROPAY_FIRST_NAME"] = "Èìÿ ïîêóïàòåëÿ";
+$MESS["SALE_HPS_ACQUIROPAY_LAST_NAME"] = "Ôàìèëèÿ ïîêóïàòåëÿ";
 
-$MESS["SALE_HPS_ACQUIROPAY_PAYMENT_ID"] = "ÐÐ¾Ð¼ÐµÑ€ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
-$MESS["SALE_HPS_ACQUIROPAY_SHOULD_PAY"] = "Ð¡ÑƒÐ¼Ð¼Ð° Ðº Ð¾Ð¿Ð»Ð°Ñ‚Ðµ";
+$MESS["SALE_HPS_ACQUIROPAY_PAYMENT_ID"] = "Íîìåð îïëàòû";
+$MESS["SALE_HPS_ACQUIROPAY_SHOULD_PAY"] = "Ñóììà ê îïëàòå";

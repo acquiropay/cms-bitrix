@@ -1,3 +1,3 @@
 <?php
 
-$MESS["SALE_HPS_ACQUIROPAY_BUTTON"] = "ÐžÐ¿Ð»Ð°Ñ‚Ð¸Ñ‚ÑŒ";
+$MESS["SALE_HPS_ACQUIROPAY_BUTTON"] = "Îïëàòèòü";
