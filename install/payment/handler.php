@@ -150,7 +150,7 @@ class AcquiropayHandler extends PaySystem\ServiceHandler
      */
     protected function checkToken(Payment $payment, Request $request)
     {
-        return hash_equals(
+        return $this->hash_equals(
             md5(
                 $this->getBusinessValue($payment, "ACQUIROPAY_MERCHANT_ID") .
                 $request->get('payment_id') .
@@ -160,6 +160,20 @@ class AcquiropayHandler extends PaySystem\ServiceHandler
             ),
             $request->get("sign")
         );
+    }
+
+    protected function hash_equals($str1, $str2)
+    {
+        if (strlen($str1) != strlen($str2)) {
+            return false;
+        } else {
+            $res = $str1 ^ $str2;
+            $ret = 0;
+            for ($i = strlen($res) - 1; $i >= 0; $i--) {
+                $ret |= ord($res[$i]);
+            }
+            return !$ret;
+        }
     }
 
     protected function shouldIncludeReceipt(Payment $payment = null)
